@@ -8,8 +8,7 @@ const LoginPage = () => {
   
   return (
     <div>
-      <h1 className={styles.color}>Fucking login Page</h1>
-      
+      <h1 className={styles.color}>Fucking login Page</h1>  
     </div>
   )
 }
