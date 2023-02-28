@@ -9,7 +9,7 @@ const LoginPage = () => {
   return (
     <div>
       <h1 className={styles.color}>Fucking login Page</h1>
-      <Test gnom = {gnom}/>
+      
     </div>
   )
 }
