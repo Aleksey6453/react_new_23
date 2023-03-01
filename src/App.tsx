@@ -1,10 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import LoginPage from './components/auth/login/loginPage';
 import Home from './components/home'
 import PrivateRoute from './utils/router/privatRoute';
-
+import AuthRootComponent from './components/auth';
 
 
 function App() {
@@ -14,7 +12,8 @@ function App() {
         <Route element={<PrivateRoute/>}>
           <Route path='/' element={<Home/>} />
         </Route>
-        <Route path='login' element={<LoginPage/>} />
+        <Route path='login' element={<AuthRootComponent/>} />
+        <Route path='register' element={<AuthRootComponent/>} />
       </Routes>
     </div>
   );
