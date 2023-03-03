@@ -1,0 +1,18 @@
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+}
+.form {
+    width: 40%;
+
+}
+.incitingText{
+    color: #0186D0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
