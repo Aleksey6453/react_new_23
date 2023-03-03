@@ -5,7 +5,7 @@ import RegisterPage from './register/register'
 import './style.css'
 import { Box } from '@mui/material';
 
-const AuthRootComponent = () => {
+const AuthRootComponent:React.FC = ():JSX.Element => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const location = useLocation()

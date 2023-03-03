@@ -1,16 +1,13 @@
 import React from 'react'
 import {TextField, Button, Typography} from '@mui/material'
+import { IPropsLogin } from '../../../common/types/auth'
 
-const LoginPage = (props: any) => {
+
+const LoginPage:React.FC<IPropsLogin> = (props:IPropsLogin): JSX.Element => {
 
   const {setPassword, setEmail} = props
   
   return (
-<<<<<<< HEAD
-    <div>
-      <h1 className={styles.color}>Fucking login Page</h1>  
-    </div>
-=======
     <>
       <Typography variant="h3">
         Authorization
@@ -25,7 +22,6 @@ const LoginPage = (props: any) => {
        Dont have an account? <span className='incitingText'>Registrations!</span>
       </Typography>
     </>
->>>>>>> test27
   )
 }
 
