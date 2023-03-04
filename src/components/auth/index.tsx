@@ -8,6 +8,9 @@ import { Box } from '@mui/material';
 const AuthRootComponent:React.FC = ():JSX.Element => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [repeatPassword, setRepeatPassword] = useState('')
+  const [name, setName] = useState('')
+  const [userName, setUserName] = useState('')
   const location = useLocation()
 
   const handleSubmit = async (e: {preventDefault:()=>void}) => {
@@ -30,7 +33,14 @@ const AuthRootComponent:React.FC = ():JSX.Element => {
           color='#A0A0A0'
           border='2px solid #A0A0A0'
         >
-          {location.pathname === '/login' ? <LoginPage setEmail={setEmail} setPassword={setPassword} /> : location.pathname === '/register' ? <RegisterPage /> : null}
+          {location.pathname === '/login' 
+              ? <LoginPage setEmail={setEmail} setPassword={setPassword}/> : location.pathname === '/register' 
+                ? <RegisterPage 
+                    setEmail={setEmail} 
+                    setPassword={setPassword}
+                    setRepeatPassword={setRepeatPassword}
+                    setName={setName}
+                    setUserName={setUserName}/> : null}
         </Box>
       </form>
     </div>
