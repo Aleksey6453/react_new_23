@@ -15,6 +15,15 @@ const AuthRootComponent:React.FC = ():JSX.Element => {
 
   const handleSubmit = async (e: {preventDefault:()=>void}) => {
       e.preventDefault()
+      if(location.pathname === '/login'){
+          const userData = {
+            email,
+            password
+          }
+          console.log(userData,"Post")
+      } else {
+          console.log("Register")
+      }
   } 
 
   return(
